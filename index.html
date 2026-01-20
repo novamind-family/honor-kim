@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To. 김주연 대표님께</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Serif KR", "Nanum Myeongjo", serif;
+      background: #f6f2ea;
+      color: #2c2c2c;
+      line-height: 1.9;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(24px, 5vw, 36px);
+      color: #6e5b3a;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .letter {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: clamp(20px, 4vw, 40px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      margin-bottom: 50px;
+      white-space: pre-line;
+      font-size: clamp(16px, 3.5vw, 18px);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 60px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    .gallery img:nth-child(n) {
+      animation-delay: calc(var(--i) * 0.15s);
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .bgm {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>To. 김주연 대표님께</h1>
+  <p>비즈니스에서 사람으로, 성장으로 이어진 인연</p>
+</header>
+
+<div class="container">
+
+  <section class="letter">
+To. 김주연 대표님께
+
+2004년, 처음 대표님을 뵈었을 때  
+그때의 열정과 도전의 모습들, 그리고  
+2024년의 경영자로서 빛나는 눈빛까지  
+여전히 저에게는 또렷하게 기억으로 남아 있습니다.
+
+비즈니스의 언어로 시작된 인연이  
+시간이 지나며 신뢰와 배움의 의미로 깊어졌습니다.  
+대표님은 언제나 한결같이  
+‘성장의 방향’을 잃지 않는 분이셨습니다.
+
+그 모습에서 저는 일을 넘어  
+삶의 태도를 배웠고,  
+사람의 가치를 배웠습니다.
+
+2026년, 이제 저는 다소 다른 궤도를 걷고 있지만  
+그 시절의 진심과 배움은  
+여전히 제 안에서 살아 움직이고 있습니다.
+
+비즈니스의 경계를 넘어  
+사람의 온기로 이어진 이 인연이  
+앞으로도 오래도록 흐르길 바랍니다.
+
+저 역시 제 자리에서  
+대표님께 배운 ‘진정한 성장’을 잊지 않고  
+꾸준히 더 나은 사람이 되기 위해 걸어가겠습니다.
+
+지난 1년 동안 연락을 드리지 못했지만,  
+대표님의 앞길에  
+따뜻한 빛이 늘 함께하길 바라는 마음은  
+한 번도 멈춘 적이 없었습니다.
+
+2026년 어느 날,  
+존경과 감사의 마음을 담아  
+강석우 드림
+  </section>
+
+  <section class="gallery">
+    <img src="photo1.jpg" style="--i:1">
+    <img src="photo2.jpg" style="--i:2">
+    <img src="photo3.jpg" style="--i:3">
+    <img src="photo4.jpg" style="--i:4">
+    <img src="photo5.jpg" style="--i:5">
+    <img src="photo6.jpg" style="--i:6">
+  </section>
+
+  <section class="bgm">
+    <audio controls autoplay loop>
+      <source src="bgm.mp3" type="audio/mpeg">
+      브라우저가 오디오를 지원하지 않습니다.
+    </audio>
+  </section>
+
+</div>
+
+<footer>
+  관계의 기록 · 2004 → 2026
+</footer>
+
+</body>
+</html>
